@@ -1,25 +1,16 @@
-# SOC Home Lab Architecture
-
-## Objective
-Design and deploy a realistic SOC lab environment.
-
-## Components
-- ELK-based SIEM
-- pfSense firewall
-- Suricata IDS/IPS
-- Windows endpoint
-- Linux log source
-
-## Network Segmentation
-- Management VLAN
-- Internal VLAN
-- DMZ VLAN
-
-## Log Sources
-- Windows Event Logs
-- Syslog
-- Firewall logs
-- Suricata alerts
-
-## Detection Coverage
-Mapped to MITRE ATT&C
+soc-homelab-architecture/
+│
+├── README.md
+├── architecture-diagram.png
+├── network-topology.png
+├── elk/
+│   ├── logstash-configs/
+│   ├── grok-patterns/
+│   └── index-templates/
+├── pfsense/
+│   ├── vlan-structure.md
+│   ├── firewall-rules.md
+│   └── nat-config.md
+└── suricata/
+    ├── custom-rules.rules
+    └── rule-tuning-notes.md
